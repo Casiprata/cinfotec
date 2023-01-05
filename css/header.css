@@ -1,0 +1,61 @@
+:root {
+    --box-shadow: 0 .5rem 1.5rem rgba(85, 123, 187, .1);
+    --claro: #557BBB;
+    --escuro: #001941;
+    --laranja: #D35900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    transition: all .2s linear;
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.container-fluid .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.container-fluid .navbar-brand,
+.container-fluid span {
+    font-family: 'a Aksi Mosi', 'sans-serif';
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.container-fluid span {
+    color: var(--escuro);
+}
+
+.navbar a.btn {
+    margin-left: 20px;
+    border-color: var(--claro);
+    color: var(--claro);
+}
+
+.navbar a.btn:hover {
+    margin-left: 20px;
+    color: #fff;
+    background-color: var(--claro)
+}
+
+.navbar-nav a {
+    color: var(--escuro);
+}

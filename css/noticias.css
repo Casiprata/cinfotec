@@ -1,0 +1,9 @@
+
+
+.header-noticias {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('../imagens/noticias.jpg') center;
+    background-size: cover;
+
+}

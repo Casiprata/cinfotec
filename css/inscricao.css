@@ -1,0 +1,138 @@
+:root {
+  --claro: #557BBB;
+  --escuro: #001941;
+  --laranja: #D35900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  transition: all .2s linear;
+}
+
+.header-inscricao {
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('../imagens/talatona.jpeg') center;
+  background-size: cover;
+
+}
+
+.container-inscricao {
+  margin-top: 20px;
+  background-color: #fff;
+  height: 100vh;
+  box-shadow: 2px 2rem .7rem rgba(0, 0, 0, .7);
+}
+
+.inscricao-titulo h3 {
+  color: gray;
+  font-size: 24px;
+  text-align: center;
+}
+
+.inscricao-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 30px 20px;
+}
+
+.inscricao-form h4 {
+  font-size: 24px;
+  font-family: 'Avigea', sans-serif;
+  color: gray;
+  margin-bottom: 0px;
+}
+
+.inscricao-form .linha {
+  width: 100%;
+  border-style: none;
+  height: 1px;
+  margin-top: 0px;
+}
+
+.inscricao-form .inputs {
+  display: grid;
+  grid-template-columns: 49% 20px 49%;
+  margin-bottom: 25px;
+}
+
+.inscricao-form .inputs .input {
+
+  margin-right: 10px;
+  margin-top: 25px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.inscricao-form>:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao-form>:last-child .botao {
+  width: 30%;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.inscricao-form>:last-child .botao:hover {
+  opacity: 1;
+}
+
+.sexo-telefone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sexo-telefone>:last-child() {
+  width: 30%
+}
+
+.sexo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sexo>:last-child {
+  display: flex;
+}
+
+.sexo>:last-child .form-check {
+  margin-right: 30px;
+}
+
+
+@media screen and (max-width: 1410px) {
+  .inscricao-form .inputs {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+  }
+
+  .inscricao-form .linha {
+    display: none;
+  }
+
+  .sexo-telefone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sexo-telefone .tele {
+    width: 50%;
+  }
+
+
+
+  @media screen and (max-width: 1006px) {
+    .sexo-telefone {
+      display: grid;
+      grid-template-rows: 1fr;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+
+    --claro: #557BBB;
+    --escuro: #001941;
+    --laranja: #D35900;
+}
+
+.header-contactos {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('../imagens/contactos.jpeg') center;
+    background-size: cover;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    transition: all .2s linear;
+}
+
+.container-contactos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.container-contactos .social-mideas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container-contactos .social-mideas{
+    padding: 20px;
+}
+.container-contactos .social-mideas h3, .container-contactos .social-mideas P{
+    color: #fff;
+}
+
+.container-contactos .social-mideas .social-imagens img{
+background-color: #557BBB;
+padding: 5px;
+border-radius: 50%;
+}
+.container-contactos .artigo {
+    width: 33%;
+    height: 60vh;
+    margin: 0px 10px;
+}
+
+.container-contactos .mapa {
+    background-color: gray;
+    margin-left: 10px;
+}
+
+.container-contactos .social-mideas {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 25, 65));
+
+}
+
+.container-contactos .mensagem {
+    background-color: #fff;
+    box-shadow: 0 .5rem 1.5rem rgba(85, 123, 187, .9);
+    margin-right: 10px;
+
+}
+
+.container-contactos .mensagem>div {
+    margin: 40px 0px 50px 40px;
+}
+
+.container-contactos .mensagem input,
+textarea {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container-contactos{
+        flex-direction: column;
+    }
+}

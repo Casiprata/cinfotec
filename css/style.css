@@ -1,0 +1,397 @@
+:root {
+    --box-shadow: 0 .5rem 1.5rem rgba(85, 123, 187, .1);
+    --claro: #557BBB;
+    --escuro: #001941;
+    --laranja: #D35900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: #fff;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 120px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-top: 25px;
+    font-family: 'a Aksi Mosi', sans-serif;
+}
+
+.carousel-caption p{
+    margin: auto;
+    font-size: 24px;
+    font-family: 'nontserrant', sans-serif;
+}
+.carousel-caption p.feliz{
+    font-weight: bold;
+    font-size: 36px;
+}
+.carousel-caption .natal{
+ font-family: 'Anthony Hunter';
+ font-size: 100px;
+
+ color: red;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+/*----------Padrão--------*/
+.botao {
+    transition: all 0.5s;
+}
+
+.botao span {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.botao span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: all 0.5;
+}
+
+.botao:hover span {
+    padding-right: 25px;
+}
+
+.botao:hover span::after {
+    opacity: 1;
+    right: 2px;
+}
+
+/*--------------------------*/
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-nav .navbar-link {
+    color: #000;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.services .card-body i {
+    font-size: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    margin: 0px;
+}
+
+.sobre-row {
+    flex-basis: 50%;
+}
+
+.about-text {
+    flex-basis: 50%;
+}
+
+.about-text p {
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.row.video {
+    width: 500px;
+    height: 50vh;
+}
+
+.sobre-row {
+    padding: 10px 20px
+}
+
+.sobre-row .about-text {
+    width: 40%;
+    text-align: justify;
+}
+
+.container-numero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    height: 2px;
+    background-color: var(--escuro);
+    border-left: none;
+
+}
+
+.container-1 p {
+    font-size: 24px;
+}
+
+.container-1 h2 {
+    font-size: 36px;
+    color: grey;
+}
+
+.container-2 .card {
+    height: 48vh;
+    margin-bottom: 10px;
+}
+
+.container-2 .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-2 .card .card-body img {
+    width: 60px;
+}
+
+.container-2 .card .card-body p {
+    text-align: center;
+}
+
+.cursos-promocionais div.divisao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-Cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    right: 0;
+    left: 0;
+}
+
+.cursos-item {
+    flex-basis: 33%;
+}
+
+.div-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    padding: 20px;
+}
+
+.div-content h4 {
+    font-family: 'Avigea', sans-serif;
+    font-size: 36px;
+    color: var(--escuro);
+}
+
+.div-content .conteudo {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-content .conteudo p {
+    margin: 0px;
+    font-size: 19px;
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+}
+
+.div-content .conteudo a {
+    background-color: #001941;
+    color: #fff;
+    font-family: 'nontserrant', sans-serif;
+    border-radius: 20px;
+    padding-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 28%;
+    height: 50px;
+    align-self: flex-end;
+}
+
+.div-content .conteudo a:hover {
+    opacity: 1.0;
+}
+
+.div-content .imagem img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.div-content .imagem img:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .9));
+}
+
+/*----------------Media Queries------------*/
+@media screen and (max-width: 1619px) {
+ *{
+    font-size: 50%;
+ }
+ .cursos-item {
+    flex-basis: 49%;
+}
+.div-content .imagem img {
+    width: 700px;
+    height: 700px;
+    
+}
+}
+@media screen and (max-width: 1479px) {
+    .container-Cursos {
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 1311px) {
+    .container-2 .card .card-body img {
+        width: 40px;
+    }
+    .container-2 .card .card-body .card-title{
+        font-size: 24px;
+    }
+    .container-2 .card .card-body .lead{
+        font-size: 16px;
+    }
+
+    .div-content .conteudo p {
+        font-size: 16px;
+    }
+    
+    .preco {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .div-content h4 {
+        font-size: 28px;
+    }
+    
+
+    .container-1 p {
+        font-size: 18px;
+    }
+    
+    .container-1 h2 {
+        font-size: 28px;
+        color: grey;
+    }
+
+    .carousel-caption h5 {
+        font-size: 80px;
+    }
+    
+    .carousel-caption p{
+        font-size: 20px;
+    }
+    .carousel-caption p.feliz{
+        font-size: 24px;
+    }
+    .carousel-caption .natal{
+     font-size: 65px;
+    }
+    .services .card-body i {
+        font-size: 40px;
+    }
+    .about-text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+   .about-text h2{
+    font-size: 15px;
+    font-weight: bold;
+   }
+   .about-text p{
+    font-size: 13px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .about{
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+   }
+ 
+.div-content .imagem img {
+    width: 500px;
+    height: 500px;
+    
+}
+}
+@media screen and (max-width: 500px) {
+    .cursos-item {
+        flex-basis: 30%;
+    }
+}
